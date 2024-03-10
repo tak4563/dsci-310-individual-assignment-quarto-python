@@ -144,17 +144,27 @@ window.Quarto = {
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
-<div class="quarto-figure quarto-figure-middle">
-<figure class="figure">
-<p><img src="../results/horse_pops_plot.png" class="img-fluid quarto-figure quarto-figure-middle figure-img" style="width:90.0%"></p>
-<figcaption>Horse populations for all provinces in Canada from 1906 - 1972.</figcaption>
+<div id="fig-horsePopulation" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-horsePopulation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../results/horse_pops_plot.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-horsePopulation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Horse populations for all provinces in Canada from 1906 - 1972.
+</figcaption>
 </figure>
 </div>
-<p>We can see from Figure 1 that Ontario, Saskatchewan and Alberta have had the highest horse populations in Canada. All provinces have had a decline in horse populations since 1940. This is likely due to the rebound of the Canadian automotive industry after the Great Depression and the Second World War. An interesting follow-up visualisation would be car sales per year for each Province over the time period visualised above to further support this hypothesis.</p>
-<p>Suppose we were interested in looking in more closely at the province with the highest spread (in terms of standard deviation) of horse populations. We present the standard deviations in Table 1. <strong>?@tbl-horses_sd</strong>.</p>
-<div id="tbl-horse_sd" class="cell anchored" data-tbl--cap="Standard deviation of historical (1906-1972) horse populations for each Canadian province" data-execution_count="2">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="50">
-<table class="table table-sm table-striped small">
+<p>We can see from <a href="#fig-horsePopulation" class="quarto-xref">Figure&nbsp;1</a> that Ontario, Saskatchewan and Alberta have had the highest horse populations in Canada. All provinces have had a decline in horse populations since 1940. This is likely due to the rebound of the Canadian automotive industry after the Great Depression and the Second World War. An interesting follow-up visualisation would be car sales per year for each Province over the time period visualised above to further support this hypothesis.</p>
+<p>Suppose we were interested in looking in more closely at the province with the highest spread (in terms of standard deviation) of horse populations. We present the standard deviations in <a href="#tbl-horses" class="quarto-xref">Table&nbsp;1</a>.</p>
+<div class="cell" data-execution_count="2">
+<div id="tbl-horses" class="cell quarto-float anchored" data-execution_count="2">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-horses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Standard deviation of historical (1906-1972) horse populations for each Canadian province
+</figcaption>
+<div aria-describedby="tbl-horses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="34">
+<table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Province</th>
@@ -202,16 +212,23 @@ window.Quarto = {
 </table>
 </div>
 </div>
-<p>Note that we define standard deviation (of a sample) as</p>
-<p><span class="math display">\[s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }\]</span></p>
-<p>Additionally, note that in Table 1 we consider the sample standard deviation of the number of horses during the same time span as Figure 1.</p>
-<div class="quarto-figure quarto-figure-middle">
-<figure class="figure">
-<p><img src="../results/horse_pops_plot_largest_sd.png" class="img-fluid quarto-figure quarto-figure-middle figure-img" style="width:60.0%"></p>
 </figure>
 </div>
-<p>Figure 2: Horse populations for the province with the largest standard deviation</p>
-<p>In Figure 2 we zoom in and look at the province of Saskatchewan, which had the largest spread of values in terms of standard deviation.</p>
+</div>
+<p>Note that we define standard deviation (of a sample) as</p>
+<p><span class="math display">\[s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }\]</span></p>
+<p>Additionally, note that in <a href="#tbl-horses" class="quarto-xref">Table&nbsp;1</a> we consider the sample standard deviation of the number of horses during the same time span as <a href="#fig-horsePopulation" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<div id="fig-horseLargest" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-horseLargest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../results/horse_pops_plot_largest_sd.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-horseLargest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Horse populations for the province with the largest standard deviation.
+</figcaption>
+</figure>
+</div>
+<p>In <a href="#fig-horseLargest" class="quarto-xref">Figure&nbsp;2</a> we zoom in and look at the province of Saskatchewan, which had the largest spread of values in terms of standard deviation.</p>
 </section>
 <section id="references" class="level2 unnumbered">
 
